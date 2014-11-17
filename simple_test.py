@@ -21,9 +21,9 @@ class testSauceWrappers(unittest.TestCase):
 
     def test_amazon(self):
         driver = self.driver
-        driver.get("http://amazon.com")
-        print "\rSauceOnDemandSessionID=%s job-name=%s" % (self.driver.session_id, "test_amazon")
-        assert "Amazon.com" in driver.title
+        driver.get("http://filesync.net")
+        print "\rSauceOnDemandSessionID=%s job-name=%s" % (self.driver.session_id, "test_filesync")
+        assert "Filesync.net" in driver.title
         driver.quit()
 
 
