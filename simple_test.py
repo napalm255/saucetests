@@ -24,6 +24,8 @@ class testSauceWrappers(unittest.TestCase):
         driver.get("http://filesync.net")
         print "\rSauceOnDemandSessionID=%s job-name=%s" % (self.driver.session_id, "test_filesync")
         #assert "Filesync.net" in driver.title
+        driver.get("http://meaustin.com")
+        print "\rSauceOnDemandSessionID=%s job-name=%s" % (self.driver.session_id, "test_meaustin")
         driver.quit()
 
 
