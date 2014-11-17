@@ -19,7 +19,7 @@ class testSauceWrappers(unittest.TestCase):
         self.driver = webdriver.Remote(desired_capabilities=desired_capabilities, command_executor=command_executor)
 
 
-    def test_amazon(self):
+    def test_websites(self):
         driver = self.driver
         driver.get("http://filesync.net")
         print "\rSauceOnDemandSessionID=%s job-name=%s" % (self.driver.session_id, "test_filesync")
