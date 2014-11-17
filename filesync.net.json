@@ -1,0 +1,21 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://filesync.net/"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Welcome to filesync.net!!"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
